@@ -13,4 +13,4 @@ vim.opt.scrolloff = 5
 vim.opt.showmode = false
 
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme sonokai]])

@@ -21,6 +21,9 @@ return {
 				}
 			},
       filesystem = {
+				filtered_items = {
+					visible = true,
+				},
         window = {
           mappings = {
             ["l"] = "open",
