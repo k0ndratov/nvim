@@ -12,5 +12,10 @@ vim.opt.shiftwidth = 2
 vim.opt.scrolloff = 5
 vim.opt.showmode = false
 
-vim.o.background = "dark" -- or "light" for light mode
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.o.foldenable = false  -- disable folding
+
+vim.o.background = "dark"
 vim.cmd([[colorscheme sonokai]])
+
