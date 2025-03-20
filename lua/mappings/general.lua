@@ -29,3 +29,10 @@ vim.api.nvim_set_keymap('n', '<leader>tc', ':tabclose<CR>', { noremap = true, si
 for i = 1, 9 do
   vim.api.nvim_set_keymap('n', '<leader>' .. i, ':tabn ' .. i .. '<CR>', { noremap = true, silent = true })
 end
+
+function insertFullPath()
+  local filepath = vim.fn.expand('%')
+  vim.fn.setreg('+', filepath) -- write to clippoard
+end
+
+vim.keymap.set('n', '<leader>cp', insertFullPath, { noremap = true, silent = true })

@@ -16,6 +16,8 @@ vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.o.foldenable = false  -- disable folding
 
+vim.o.updatetime = 100
+
 vim.o.background = "dark"
-vim.cmd([[colorscheme sonokai]])
+vim.cmd([[colorscheme everforest]])
 
