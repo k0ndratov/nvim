@@ -1,16 +1,10 @@
 vim.g.mapleader = " "
 
 -- Горизонтальное разделение экрана
-vim.api.nvim_set_keymap('n', '<leader>sv', ':split<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>sh', ':split<CR>', { noremap = true, silent = true })
 
 -- Вертикальное разделение экрана
-vim.api.nvim_set_keymap('n', '<leader>sh', ':vsplit<CR>', { noremap = true, silent = true })
-
--- Перемещение между окнами
-vim.api.nvim_set_keymap('n', '<leader>k', '<C-w>k', { noremap = true, silent = true })  -- Переместиться вверх
-vim.api.nvim_set_keymap('n', '<leader>j', '<C-w>j', { noremap = true, silent = true })  -- Переместиться вниз
-vim.api.nvim_set_keymap('n', '<leader>h', '<C-w>h', { noremap = true, silent = true })  -- Переместиться влево
-vim.api.nvim_set_keymap('n', '<leader>l', '<C-w>l', { noremap = true, silent = true })  -- Переместиться вправо
+vim.api.nvim_set_keymap('n', '<leader>sv', ':vsplit<CR>', { noremap = true, silent = true })
 
 -- Закрытие окна
 vim.api.nvim_set_keymap('n', '<leader>q', '<C-w>q', { noremap = true, silent = true })
@@ -36,3 +30,9 @@ function insertFullPath()
 end
 
 vim.keymap.set('n', '<leader>cp', insertFullPath, { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>y', '"+y', { noremap = true })
+vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true })
+
+vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true })
+vim.api.nvim_set_keymap('v', '<leader>p', '"+p', { noremap = true })
