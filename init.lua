@@ -11,6 +11,8 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 5
 vim.opt.showmode = false
+vim.opt.signcolumn = "yes"
+vim.opt.colorcolumn = "100" -- или "80", если ты старовер
 
 vim.opt.hidden = true
 vim.opt.autowrite = true
